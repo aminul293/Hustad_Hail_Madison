@@ -1201,15 +1201,17 @@ ul { list-style: none; }
 .footer__brand { max-width: 280px; }
 
 .footer__logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
   margin-bottom: 16px;
 }
 
-.footer__logo .nav__logo-mark { width: 36px; height: 36px; }
-.footer__logo .nav__logo-text { font-size: .95rem; }
-.footer__logo .nav__logo-sub  { font-size: .64rem; }
+.footer__logo-image {
+  display: block;
+  width: auto;
+  height: 38px;
+  max-width: 220px;
+  filter: brightness(0) invert(1);
+  opacity: .96;
+}
 
 .footer__brand p {
   color: rgba(255,255,255,.4);
