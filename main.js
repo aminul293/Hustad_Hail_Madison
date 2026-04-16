@@ -220,7 +220,8 @@ const WEB3FORMS_READY      = WEB3FORMS_ACCESS_KEY !== 'YOUR_ACCESS_KEY';
       const start = Date.now(), dur = 1400;
       const tick = () => {
         const p = Math.min((Date.now() - start) / dur, 1);
-        el.textContent = Math.round(from + (target - from) * easeOut(p)).toLocaleString() + suffix;
+        const value = Math.round(from + (target - from) * easeOut(p));
+        el.textContent = target >= 1000 && !suffix ? String(value) + suffix : value.toLocaleString() + suffix;
         if (p < 1) requestAnimationFrame(tick);
       };
       requestAnimationFrame(tick);
