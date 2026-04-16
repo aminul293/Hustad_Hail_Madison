@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hustad Companies, Inc. | Southern Wisconsin Hail Response</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ─── NAV ─── -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__logo" href="#">
+        <div class="nav__logo-mark">
+          <svg width="28" height="30" viewBox="0 0 40 43" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Shield body -->
+            <path d="M20 1L37 7.8V21.5C37 32.5 29.5 39.8 20 42.5C10.5 39.8 3 32.5 3 21.5V7.8L20 1Z" fill="white" fill-opacity="0.18"/>
+            <!-- Roof / gable -->
+            <polyline points="10,26 20,14 30,26" stroke="white" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+            <!-- House walls -->
+            <rect x="13.5" y="26" width="13" height="9" fill="white"/>
+            <!-- Door -->
+            <rect x="17" y="29" width="6" height="6" rx="0.5" fill="#E8920A"/>
+            <!-- Shield border accent -->
+            <path d="M20 1L37 7.8V21.5C37 32.5 29.5 39.8 20 42.5C10.5 39.8 3 32.5 3 21.5V7.8L20 1Z" stroke="white" stroke-width="1.5" stroke-opacity="0.35" fill="none"/>
+          </svg>
+        </div>
+        <div class="nav__logo-text-group">
+          <span class="nav__logo-text">Hustad Companies</span>
+          <span class="nav__logo-sub">Inc.</span>
+        </div>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#why-storm">The Storm</a>
+        <a href="#why-hustad">Why Hustad</a>
+        <a href="#what-we-deliver">What We Deliver</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav__cta-group">
+        <a href="tel:+16082240990" class="btn btn--ghost btn--sm">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.16 6.16l.97-.97a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call Now
+        </a>
+        <a href="#contact" class="btn btn--primary btn--sm">Request Assessment</a>
+      </div>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero">
+    <!-- Slideshow background -->
+    <div class="hero__slideshow" id="heroSlideshow" aria-hidden="true">
+      <div class="hero__slide active" style="background-image:url('images/storm-road.jpg')"></div>
+      <div class="hero__slide" style="background-image:url('images/storm-roof.jpg')"></div>
+      <div class="hero__slide" style="background-image:url('images/hail-stones.jpg')"></div>
+      <div class="hero__slide" style="background-image:url('images/storm-mirror.jpg')"></div>
+      <div class="hero__slide" style="background-image:url('images/storm-damage.jpg')"></div>
+    </div>
+    <div class="hero__overlay"></div>
+    <!-- Slideshow nav dots -->
+    <div class="hero__dots" id="heroSlideNav" aria-label="Slideshow navigation">
+      <button class="hero__dot active" data-slide="0" aria-label="Slide 1"></button>
+      <button class="hero__dot" data-slide="1" aria-label="Slide 2"></button>
+      <button class="hero__dot" data-slide="2" aria-label="Slide 3"></button>
+      <button class="hero__dot" data-slide="3" aria-label="Slide 4"></button>
+      <button class="hero__dot" data-slide="4" aria-label="Slide 5"></button>
+    </div>
+    <div class="hero__inner">
+      <div class="hero__badge">
+        <span class="pulse-dot"></span>
+        Active Hail Event — Southern Wisconsin
+      </div>
+      <h1 class="hero__headline">
+        Southern Wisconsin<br />
+        <em>Hail Response</em>
+      </h1>
+      <p class="hero__sub">A Madison Response Built for Ownership</p>
+      <p class="hero__body">
+        Recent southern Wisconsin hail left visible damage to glass, siding, and exposed exterior
+        surfaces. Boardroom-level storm response starts with calm local accountability, disciplined
+        documentation, and a clean decision path.
+      </p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary btn--lg">Request a Field Assessment</a>
+        <a href="#why-storm" class="btn btn--outline btn--lg">Learn What's at Stake</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat">
+          <span class="stat__num">1973</span>
+          <span class="stat__label">Founded in Madison</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__num">50+</span>
+          <span class="stat__label">Years Local Accountability</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__num">100%</span>
+          <span class="stat__label">Exterior Scope Coverage</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll-cue" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ─── IMPACT BANNER ─── -->
+  <section class="impact-banner">
+    <div class="container">
+      <div class="impact-banner__grid">
+        <div class="impact-item">
+          <div class="impact-item__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <div>
+            <strong>Large hail documented locally</strong>
+            <span>Measured impact scale confirmed across the region</span>
+          </div>
+        </div>
+        <div class="impact-item">
+          <div class="impact-item__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <div>
+            <strong>Broken rear glass after storm</strong>
+            <span>Windows, screens &amp; glazing impacts identified</span>
+          </div>
+        </div>
+        <div class="impact-item">
+          <div class="impact-item__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div>
+            <strong>Exterior &amp; roof exposure</strong>
+            <span>Siding, gutters, soft metals affected at scale</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── WHY STORM ─── -->
+  <section class="section section--alt" id="why-storm">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__tag">Risk Briefing</div>
+        <h2>Why This Storm Matters</h2>
+        <p>Visible exterior impact often understates the full picture on day one.</p>
+      </div>
+      <div class="cards-grid">
+        <div class="card card--accent">
+          <div class="card__icon card__icon--amber">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <h3>Hidden Roof-System Exposure</h3>
+          <p>Visible surface damage understates roof-system exposure on day one. What appears minor at ground level may indicate significant structural impact above.</p>
+        </div>
+        <div class="card card--accent">
+          <div class="card__icon card__icon--amber">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Compound Loss Events</h3>
+          <p>Siding, screens, windows, soft metals, and roof sections can all be part of one loss event — each element interacting with the others in ways that multiply total exposure.</p>
+        </div>
+        <div class="card card--accent">
+          <div class="card__icon card__icon--red">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>The Real Cost of Delay</h3>
+          <p>The real cost of delay is confusion, interior risk, and avoidable operational noise. Every day without documentation is a day ownership lacks the facts needed for decision-making.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── WHAT LEADERSHIP NEEDS ─── -->
+  <section class="section" id="leadership">
+    <div class="container">
+      <div class="two-col">
+        <div class="two-col__text">
+          <div class="section__tag">Executive Clarity</div>
+          <h2>What Leadership Needs Next</h2>
+          <p class="lead">After a significant weather event, ownership and leadership need facts — not guesswork, not ambiguity.</p>
+          <ul class="check-list">
+            <li>
+              <div class="check-list__icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <strong>Building-by-building documentation</strong>
+                <span>Precise, property-level reporting that eliminates assumptions and gives leadership a factual basis for action.</span>
+              </div>
+            </li>
+            <li>
+              <div class="check-list__icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <strong>Clear separation of conditions</strong>
+                <span>Urgent repairs, claim-position items, and monitor-only conditions — clearly delineated so priorities are obvious.</span>
+              </div>
+            </li>
+            <li>
+              <div class="check-list__icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <strong>One accountable local partner</strong>
+                <span>Roof, siding, window, gutter, and all related exterior scope handled through a single point of contact.</span>
+              </div>
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn--primary btn--md mt-1">Schedule Leadership Briefing</a>
+        </div>
+        <div class="two-col__visual">
+          <div class="visual-card">
+            <div class="visual-card__header">
+              <div class="visual-card__dot visual-card__dot--red"></div>
+              <div class="visual-card__dot visual-card__dot--amber"></div>
+              <div class="visual-card__dot visual-card__dot--green"></div>
+              <span>Property Assessment Report</span>
+            </div>
+            <div class="visual-card__body">
+              <div class="report-row report-row--urgent">
+                <div class="report-row__label">
+                  <div class="report-dot report-dot--red"></div>
+                  Urgent Repair Required
+                </div>
+                <div class="report-row__items">
+                  <span>Rear skylight — broken seal</span>
+                  <span>North gutter — structural separation</span>
+                </div>
+              </div>
+              <div class="report-row report-row--claim">
+                <div class="report-row__label">
+                  <div class="report-dot report-dot--amber"></div>
+                  Claim-Position Items
+                </div>
+                <div class="report-row__items">
+                  <span>West siding — dent pattern documented</span>
+                  <span>Roof Section B — granule loss mapped</span>
+                  <span>Screens — impact damage catalogued</span>
+                </div>
+              </div>
+              <div class="report-row report-row--monitor">
+                <div class="report-row__label">
+                  <div class="report-dot report-dot--green"></div>
+                  Monitor Only
+                </div>
+                <div class="report-row__items">
+                  <span>East façade — surface scuffs, no penetration</span>
+                </div>
+              </div>
+              <div class="report-footer">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Photo-supported · Ownership-ready · Actionable
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── WHY HUSTAD ─── -->
+  <section class="section section--dark" id="why-hustad">
+    <div class="container">
+      <div class="section__header section__header--light">
+        <div class="section__tag section__tag--light">Our Difference</div>
+        <h2>Why Hustad Looks Different</h2>
+        <p>Madison-founded. Locally accountable. Built for executive communication — not door-to-door pressure.</p>
+      </div>
+      <div class="diff-grid">
+        <div class="diff-card">
+          <div class="diff-card__number">01</div>
+          <div class="diff-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>Madison Roots Since 1973</h3>
+          <p>Founded locally by Lee Hustad. We are not a national franchise dispatched from out of state — we are built for local accountability after the weather clears.</p>
+        </div>
+        <div class="diff-card">
+          <div class="diff-card__number">02</div>
+          <div class="diff-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Executive-Grade Communication</h3>
+          <p>Reporting designed for onsite teams, regional managers, and ownership — clear summaries that translate damage to decisions, not paperwork to wade through.</p>
+        </div>
+        <div class="diff-card">
+          <div class="diff-card__number">03</div>
+          <div class="diff-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Calm Occupied-Property Execution</h3>
+          <p>No high-pressure door-to-door tactics. We work around your operations, your tenants, your schedule — with the discipline that executive-level clients expect.</p>
+        </div>
+      </div>
+      <div class="origin-block">
+        <div class="origin-block__quote">
+          "Madison roots matter after a storm."
+        </div>
+        <p>Founded in Madison in 1973 by Lee Hustad, Hustad is built for local accountability after the weather clears — from rapid assessments to ownership-ready summaries and full exterior execution.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── WHAT WE DELIVER ─── -->
+  <section class="section" id="what-we-deliver">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__tag">Our Process</div>
+        <h2>What Hustad Delivers</h2>
+        <p>From evidence to action — a disciplined three-phase response built for ownership-level accountability.</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="process-step__num">1</div>
+          <div class="process-step__connector"></div>
+          <div class="process-step__content">
+            <h3>Rapid Local Field Assessment</h3>
+            <p>Photo-supported field documentation delivered quickly, covering roof systems, siding, glass, gutters, screens, and soft metals — every exterior element that may be part of the loss event.</p>
+            <ul class="mini-list">
+              <li>On-site within 48 hours of contact</li>
+              <li>Comprehensive photo documentation</li>
+              <li>Damage mapped by building and zone</li>
+            </ul>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-step__num">2</div>
+          <div class="process-step__connector"></div>
+          <div class="process-step__content">
+            <h3>Ownership-Ready Summaries</h3>
+            <p>Executive-formatted reports that help teams move from damage to decision — organized by priority tier so onsite leads, regionals, and ownership each have exactly what they need.</p>
+            <ul class="mini-list">
+              <li>Urgent / Claim-Position / Monitor tiers</li>
+              <li>Formatted for ownership and insurance review</li>
+              <li>Clean decision path, no ambiguity</li>
+            </ul>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-step__num">3</div>
+          <div class="process-step__content">
+            <h3>Full Exterior Execution</h3>
+            <p>When the facts support it — repair, stabilization, or replacement planning across roof, siding, window, gutter, and all related exterior scope through one accountable local partner.</p>
+            <ul class="mini-list">
+              <li>Single-contractor full exterior scope</li>
+              <li>Occupied-property scheduling discipline</li>
+              <li>Wisconsin-born, Wisconsin-accountable</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SCOPE COVERAGE ─── -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__tag">Full Scope</div>
+        <h2>Complete Exterior Coverage</h2>
+        <p>One local partner handles every element of your exterior loss event.</p>
+      </div>
+      <div class="scope-grid">
+        <div class="scope-item">
+          <div class="scope-item__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+          </div>
+          <span>Roof Systems</span>
+        </div>
+        <div class="scope-item">
+          <div class="scope-item__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <span>Siding</span>
+        </div>
+        <div class="scope-item">
+          <div class="scope-item__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg>
+          </div>
+          <span>Windows &amp; Glass</span>
+        </div>
+        <div class="scope-item">
+          <div class="scope-item__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 4h18v2a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V4z"/><path d="M7 10v10M17 10v10"/></svg>
+          </div>
+          <span>Gutters</span>
+        </div>
+        <div class="scope-item">
+          <div class="scope-item__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3h18v18H3z" stroke-dasharray="3 2"/></svg>
+          </div>
+          <span>Screens</span>
+        </div>
+        <div class="scope-item">
+          <div class="scope-item__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/></svg>
+          </div>
+          <span>Soft Metals</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section class="section section--dark" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="section__tag section__tag--light">Get Started</div>
+          <h2>Request a Field Assessment</h2>
+          <p>Hustad is prepared to support our local community following recent storm activity in southern Wisconsin. As a Madison-founded company, we understand how important it is to have a trusted local partner who can respond quickly, inspect thoroughly, and help your team determine the right next steps.</p>
+          <p class="contact-info__sub">Our team is available to provide inspections, documentation, and partnership support for roofing, siding, windows, gutters, and other exterior storm-related concerns.</p>
+          <div class="contact-methods">
+            <a href="mailto:will.moore@hustadcompanies.com" class="contact-method">
+              <div class="contact-method__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <div>
+                <strong>Will Moore</strong>
+                <span>will.moore@hustadcompanies.com</span>
+              </div>
+            </a>
+            <a href="mailto:chad.eckols@hustadcompanies.com" class="contact-method">
+              <div class="contact-method__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <div>
+                <strong>Chad Eckols</strong>
+                <span>chad.eckols@hustadcompanies.com</span>
+              </div>
+            </a>
+            <a href="tel:+16082240990" class="contact-method">
+              <div class="contact-method__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.16 6.16l.97-.97a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <strong>Madison Office</strong>
+                <span>608-224-0990</span>
+              </div>
+            </a>
+            <div class="contact-method contact-method--static">
+              <div class="contact-method__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <strong>Based in Madison, WI</strong>
+                <span>Serving Southern Wisconsin Since 1973</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Lee" required />
+                <span class="form-error" id="firstNameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Hustad" required />
+                <span class="form-error" id="lastNameError"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="company">Company / Organization *</label>
+              <input type="text" id="company" name="company" placeholder="Property Management Group LLC" required />
+              <span class="form-error" id="companyError"></span>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="you@company.com" required />
+                <span class="form-error" id="emailError"></span>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(608) 555-0000" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="propertyCount">Number of Properties</label>
+              <select id="propertyCount" name="propertyCount">
+                <option value="">Select range</option>
+                <option value="1">1 property</option>
+                <option value="2-5">2–5 properties</option>
+                <option value="6-20">6–20 properties</option>
+                <option value="21+">21+ properties</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Additional Context</label>
+              <textarea id="message" name="message" rows="3" placeholder="Describe the damage you've observed, property locations, or any urgency..."></textarea>
+            </div>
+            <!-- Hidden fields for email context -->
+            <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off" />
+            <input type="hidden" id="submittedAt" name="submitted_at" />
+            <div class="form-footer">
+              <button type="submit" class="btn btn--primary btn--lg btn--full" id="submitBtn">
+                <span id="submitLabel">Request Assessment</span>
+                <svg id="submitSpinner" class="spinner hidden" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
+              </button>
+              <p class="form-note">We respond within 4 business hours. No obligation.</p>
+            </div>
+            <div class="form-error-msg hidden" id="formError">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <span id="formErrorText">Unable to send your request. Please call us directly at 608-224-0990.</span>
+            </div>
+            <div class="form-success hidden" id="formSuccess">
+              <div class="form-success__icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <h3>Request Received</h3>
+              <p>A member of the Hustad Companies, Inc. response team will be in contact within 4 business hours to schedule your field assessment.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <div class="nav__logo-mark">
+              <svg width="22" height="24" viewBox="0 0 40 43" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M20 1L37 7.8V21.5C37 32.5 29.5 39.8 20 42.5C10.5 39.8 3 32.5 3 21.5V7.8L20 1Z" fill="white" fill-opacity="0.18"/>
+                <polyline points="10,26 20,14 30,26" stroke="white" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+                <rect x="13.5" y="26" width="13" height="9" fill="white"/>
+                <rect x="17" y="29" width="6" height="6" rx="0.5" fill="#E8920A"/>
+                <path d="M20 1L37 7.8V21.5C37 32.5 29.5 39.8 20 42.5C10.5 39.8 3 32.5 3 21.5V7.8L20 1Z" stroke="white" stroke-width="1.5" stroke-opacity="0.35" fill="none"/>
+              </svg>
+            </div>
+            <div class="nav__logo-text-group">
+              <span class="nav__logo-text">Hustad Companies</span>
+              <span class="nav__logo-sub">Inc.</span>
+            </div>
+          </div>
+          <p>Wisconsin born. Wisconsin accountable.<br />Exterior storm response since 1973.</p>
+          <p class="footer__founding">Founded by Lee Hustad · Madison, WI</p>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#what-we-deliver">Field Assessment</a></li>
+            <li><a href="#what-we-deliver">Roof Systems</a></li>
+            <li><a href="#what-we-deliver">Siding &amp; Exterior</a></li>
+            <li><a href="#what-we-deliver">Windows &amp; Glass</a></li>
+            <li><a href="#what-we-deliver">Gutters &amp; Soft Metals</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#why-hustad">About Hustad</a></li>
+            <li><a href="#why-storm">Why This Storm Matters</a></li>
+            <li><a href="#leadership">For Leadership</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+16082240990">608-224-0990</a></li>
+            <li><a href="mailto:will.moore@hustadcompanies.com">will.moore@hustadcompanies.com</a></li>
+            <li><a href="mailto:chad.eckols@hustadcompanies.com">chad.eckols@hustadcompanies.com</a></li>
+            <li class="footer__location">Madison, Wisconsin</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary btn--sm mt-1">Request Assessment</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Hustad Companies, Inc. All rights reserved.</span>
+        <span>Southern Wisconsin Storm Response Specialists</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ─── STICKY CTA (mobile) ─── -->
+  <div class="sticky-cta" id="stickyCta">
+    <a href="tel:+16082240990" class="btn btn--ghost btn--sm">Call Now</a>
+    <a href="#contact" class="btn btn--primary btn--sm">Free Assessment</a>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
